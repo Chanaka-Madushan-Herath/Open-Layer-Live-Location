@@ -14,8 +14,9 @@
     font-weight: bold;
 }
 
-.link{
+.link a{
     font-weight: bold;
+    text-decoration: none;
 }
 
 .nav-link {

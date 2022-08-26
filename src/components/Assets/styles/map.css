@@ -1,9 +1,7 @@
 .map{
     margin-left: auto;
     margin-right: auto;
-    padding-top:10vh;
-    padding-bottom: 10vh;
-    height: 100vh;
+    height: 90vh;
     width: calc(100vw - 100px);
 }
 

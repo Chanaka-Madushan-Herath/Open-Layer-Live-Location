@@ -10,6 +10,7 @@ import {Fill, Stroke, Style} from "ol/style";
 import VectorLayer from "ol/layer/Vector";
 import VectorSource from "ol/source/Vector";
 import {Point} from "ol/geom";
+import NavBar from "./NavBar";
 
 const Map = () => {
     const mapRef = useRef();
@@ -91,11 +92,14 @@ const Map = () => {
     }, []);
 
     return (
-        <div className="map">
-            <div ref={mapRef} className="ol-map">
+        <>
+            <NavBar islogin={false}/>
+            <div className="map">
+                <div ref={mapRef} className="ol-map">
+                </div>
+                <button id="track" className="locator">Locate Me!</button>
             </div>
-            <button id="track" className="locator">Locate Me!</button>
-        </div>
+        </>
     );
 }
 

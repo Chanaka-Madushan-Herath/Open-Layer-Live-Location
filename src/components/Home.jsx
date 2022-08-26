@@ -13,7 +13,7 @@ const Home = (props) => {
                 {itemList.map((item)=>{
                     return(
                         <div className="item" key={item}>
-                          <Link to={item}><div className="item-name">{item}</div></Link>
+                          <Link to={"/Open-Layer-Live-Location/"+item}><div className="item-name">{item}</div></Link>
                         </div>
                     )})
                 }

@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from "./Assets/images/logo.png";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import {Image} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 function NavBar(props) {
     return (
@@ -25,8 +26,8 @@ function NavBar(props) {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3 link">
-                                    <Nav.Link href="/home">Home</Nav.Link>
-                                    <Nav.Link  href="/">Login</Nav.Link>
+                                    <Link to="/Open-Layer-Live-Location/home"><Nav.Link>Home</Nav.Link></Link>
+                                    <Link  to="/Open-Layer-Live-Location"><Nav.Link>Login</Nav.Link></Link>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>

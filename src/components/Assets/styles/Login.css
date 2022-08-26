@@ -34,3 +34,7 @@
         width: 80vw;
     }
 }
+
+.form-error{
+    color:red;
+}

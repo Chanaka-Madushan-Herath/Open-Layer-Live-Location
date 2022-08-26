@@ -8,9 +8,9 @@ function App() {
   return (
       <div className="App">
           <Routes>
-              <Route path="/" element={<Login/>}/>
-              <Route path="/home" element={<Home/>}/>
-              <Route path="/home/Map" element={<Map/>}/>
+              <Route path="/Open-Layer-Live-Location" element={<Login/>}/>
+              <Route path="/Open-Layer-Live-Location/home" element={<Home/>}/>
+              <Route path="/Open-Layer-Live-Location/Map" element={<Map/>}/>
           </Routes>
       </div>
 
