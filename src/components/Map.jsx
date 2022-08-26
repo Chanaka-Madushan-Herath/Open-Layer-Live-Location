@@ -17,7 +17,7 @@ const Map = () => {
     useEffect(() => {
         const view = new ol.View({
             center:  fromLonLat([79.86459367425945, 6.9293713674970965]),
-            zoom: 10,
+            zoom: 5,
         });
         let mapObject = new ol.Map({
             layers: [
@@ -69,7 +69,13 @@ const Map = () => {
         geolocation.on('change:position', function () {
             const coordinates = geolocation.getPosition();
             positionFeature.setGeometry(coordinates ? new Point(coordinates) : null);
-            view.setCenter(coordinates);
+            mapObject.getView().animate(
+                {
+                    center: coordinates,
+                    duration: 2000,
+                    zoom: 15
+                }
+            );
         });
 
         new VectorLayer({
