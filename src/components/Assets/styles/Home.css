@@ -1,0 +1,29 @@
+.home{
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item{
+    width: 30%;
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(9, 21, 48);
+    color: white;
+    font-weight: bold;
+}
+
+.item-name{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .item{
+        width: 40%;
+    }
+}

@@ -1,0 +1,36 @@
+.bg-color {
+    min-height: 90vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-logo{
+    top: auto;
+    background-color: rgba(255,255,255,0.6);
+    width: 150px;
+    margin: 5vh;
+}
+
+.credentials{
+    height: auto;
+    padding: 5vh;
+    width: 60vw;
+    text-align: center;
+}
+
+.version{
+    color: white;
+}
+
+@media (max-width: 426px ) {
+    .credentials{
+        width: 80vw;
+    }
+}

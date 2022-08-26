@@ -1,0 +1,23 @@
+.Navbar{
+    background-color: darksalmon;
+    padding: 0 calc((100vw - 1100px) / 2);
+    min-height: 10vh;
+    height:auto;
+}
+
+.nav-logo{
+    height: 50px;
+    width: auto;
+}
+
+.name{
+    font-weight: bold;
+}
+
+.link{
+    font-weight: bold;
+}
+
+.nav-link {
+    color: rgba(0,0,0,1)!important;
+}
